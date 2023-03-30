@@ -3,7 +3,7 @@
 #### 1. 文件上传状态接口
 
 调用地址
->POST > [域名]/shiyou/upload_file
+>POST > [域名]:5888/shiyou/upload_file
 
 参数
 
@@ -24,7 +24,7 @@
 #### 2. 用户问答接口
 
 调用地址
->POST > [域名]/shiyou/chat
+>POST > [域名]:5888/shiyou/chat
 
 参数
 
@@ -45,7 +45,7 @@
 #### 3. 用户修改接口
 
 调用地址
->POST > [域名]/shiyou/update
+>POST > [域名]:5888/shiyou/update
 
 参数
 
