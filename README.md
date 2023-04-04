@@ -73,7 +73,7 @@
 #### 4. 获取问题接口
 
 调用地址
->POST > [域名]:6001/shiyou/update
+>POST > [域名]:6001/shiyou/three_question
 
 参数
 
