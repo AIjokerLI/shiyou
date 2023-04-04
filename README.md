@@ -34,6 +34,7 @@
 | history      | string          | 可选            |  "用户：我叫张三，你叫什么？机器人：我叫小优"...                               | 历史记录(保留最近5段对话)                    |
 | target_id      | string          | 必选            |    "11122"                             | 目标id                    |
 | source      | string          | 必选            |    "H5"                             | 来源(区分前端)                    |
+| ChatGPT      | bool          | 可选            |    True                             | Ture：调用ChatGPT  False:调用小脑                    |
 
 返回值：
 ```
