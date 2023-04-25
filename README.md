@@ -3,7 +3,7 @@
 #### 1. 文件上传状态接口
 
 调用地址
->POST > [域名]:6001/shiyou/upload_file
+>POST > [域名]/shiyou/upload_file
 
 参数
 
@@ -24,17 +24,18 @@
 #### 2. 用户问答接口
 
 调用地址
->POST > [域名]:6001/shiyou/chat
+>POST > [域名]/shiyou/chat
 
 参数
 
 | 参数名称         | 参数类型        |  必填与否       | 样例取值                             | 参数说明                          |
 |:----------------:|:---------------:|:---------------:|:------------------------------------:|:---------------------------------:|
 | text      | string          | 必选            |  "你叫什么？"                               | 用户问题                    |
-| history      | string          | 可选            |  "用户：我叫张三，你叫什么？机器人：我叫小优"...                               | 历史记录(保留最近5段对话)                    |
+| history      | string          | 可选            |  "用户：我叫张三，你叫什么？机器人：我叫小优"...                               | 历史记录(保留最近1段对话)                    |
 | target_id      | string          | 必选            |    "11122"                             | 目标id                    |
 | source      | string          | 必选            |    "H5"                             | 来源(区分前端)                    |
 | ChatGPT      | bool          | 可选            |    True                             | Ture：调用ChatGPT  False:调用小脑                    |
+| character      | str          | 可选            |    "我叫张三，脾气比较暴躁，喜欢xxx..."                             | 性格描述，控制在50个字左右                    |
 
 返回值：
 ```
@@ -52,7 +53,7 @@
 #### 3. 用户修改接口
 
 调用地址
->POST > [域名]:6001/shiyou/update
+>POST > [域名]/shiyou/update
 
 参数
 
@@ -74,7 +75,7 @@
 #### 4. 获取问题接口
 
 调用地址
->POST > [域名]:6001/shiyou/three_question
+>POST > [域名]/shiyou/three_question
 
 参数
 
@@ -104,7 +105,7 @@
 #### 5. 创建目标接口
 
 调用地址
->POST > [域名]:6001/shiyou/create_target
+>POST > [域名]/shiyou/create_target
 
 参数
 
